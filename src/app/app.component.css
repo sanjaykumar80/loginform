@@ -1,0 +1,16 @@
+.header{
+    text-align: center;
+    color: red;
+}
+.form-container{
+    margin-left: 300px;
+    margin-right: 300px;
+    margin-top: 20px;
+    
+    
+    
+
+}
+mat-form-field{
+    width: 100%;
+}

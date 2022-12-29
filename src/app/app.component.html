@@ -1,0 +1,69 @@
+<form class="form-container" [formGroup]="Registation">
+  <mat-card>
+    <mat-card-header >
+      <mat-card-title >Registation Form</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      <div class="row">
+        <div class="col-md-6">
+          <mat-form-field  appearance="outline">
+            <mat-label>First Nmae</mat-label>
+            <input matInput placeholder="First Name" type="text" formControlName="fname">
+          </mat-form-field>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <mat-form-field appearance="outline">
+            <mat-label>Last Nmae</mat-label>
+            <input matInput placeholder="Last Name" type="text" formControlName="lname">
+          </mat-form-field>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <mat-form-field appearance="outline">
+            <mat-label>Email</mat-label>
+            <input matInput placeholder="Email Id" type="text" formControlName="email">
+          </mat-form-field>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <mat-form-field appearance="outline">
+            <mat-label>Number</mat-label>
+            <input matInput placeholder="Mobile Number" type="number" formControlName=number>
+          </mat-form-field>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <mat-form-field appearance="outline">
+            <mat-label>Address</mat-label>
+            <textarea matInput placeholder="Address" type="text" formControlName="address"></textarea>
+          </mat-form-field>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <mat-form-field appearance="outline">
+            <mat-label>Select Gender</mat-label>
+            <select matNativeControl id="mySelectId" formControlName="gender"type="active">
+              <option value="" disabled selected></option>
+              <option value="Male">Male</option>
+              <option value=" Female ">Female</option>
+              <option value="Other">Other</option>
+            </select>
+          </mat-form-field>
+        </div>
+      </div>
+    </mat-card-content>
+    <mat-card-actions>
+      <button (click)="saveForm()" mat-raised-button color="primary">Save Me</button>
+      
+    </mat-card-actions>
+  </mat-card>
+</form>
+
+
+<router-outlet></router-outlet>
